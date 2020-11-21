@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import API from "./utils/API"
-import EmployeeContext from "./utils/employeeContext";
 
 
 function App() {
