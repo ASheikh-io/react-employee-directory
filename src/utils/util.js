@@ -1,13 +1,13 @@
 const util = {
 
-    // Check empArray to find item matching the search
-    searchEmployees: (value, empArray) => {
-        let searchedEmps = empArray.filter((emp) => {
-            return emp.firstName.toLowerCase().includes(value.toLowerCase()) || 
-            emp.lastName.toLowerCase().includes(value.toLowerCase()) || 
-            emp.phone.toLowerCase().includes(value.toLowerCase())
+    // Check employeeArray to find item matching the search
+    searchEmployees: (value, employeeArray) => {
+        let searchedEmployees = employeeArray.filter((employee) => {
+            return employee.firstName.toLowerCase().includes(value.toLowerCase()) || 
+            employee.lastName.toLowerCase().includes(value.toLowerCase()) || 
+            employee.phone.toLowerCase().includes(value.toLowerCase())
         })
-        return searchedEmps;
+        return searchedEmployees;
     },
 
     // Function to compare values in array and sort "asc" or "desc"

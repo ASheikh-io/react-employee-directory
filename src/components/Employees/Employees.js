@@ -50,9 +50,9 @@ class Employees extends Component {
         }, () => {
             // Filter employee list
             if (this.state.search) {
-                let queriedEmps = util.searchEmployees(this.state.search, this.state.loadedEmployees);
+                let queriedEmployees = util.searchEmployees(this.state.search, this.state.loadedEmployees);
                 this.setState({
-                    employees: queriedEmps,
+                    employees: queriedEmployees,
                     orderBy: ""
                 })
             } else {
