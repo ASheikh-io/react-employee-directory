@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 // import axios from "axios";
-import {API}  from "../../utils/API";
+import {api}  from "../../utils/api";
 
 class Employees extends Component {
     constructor() {
@@ -9,13 +9,10 @@ class Employees extends Component {
     }
     // api calls in this function (life cycle method)
     componentDidMount() {
-        API.getEmpployees()
-        .then((response) => {
-            this.setState({
-                employees: response.data.results
-            });
+        api.getEmployees().then((response) => {
+          this.setState({ employees: response.data.results });
         });
-    }
+      }
 
     render() {
       return (

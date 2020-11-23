@@ -1,7 +1,9 @@
 import axios from "axios";
 
-export default {
-    getEmployees: function() {
+const api = {
+    getEmployees: () => {
         return axios.get("https://randomuser.me/api/?results=200&nat=us")
     }
 };
+
+export default {api}
