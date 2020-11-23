@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import axios from "axios";
-//import { API } from "../../utils/API";
+import React, { Component, useState } from 'react';
+// import axios from "axios";
+import {API}  from "../../utils/API";
 
 class Employees extends Component {
     constructor() {
@@ -9,10 +9,14 @@ class Employees extends Component {
     }
     // api calls in this function (life cycle method)
     componentDidMount() {
-      axios.get("https://randomuser.me/api/?results=200&nat=us").then((response) => {
-        this.setState({ employees: response.data.results });
-      });
+        API.getEmpployees()
+        .then((response) => {
+            this.setState({
+                employees: response.data.results
+            });
+        });
     }
+
     render() {
       return (
         <div className="App">
