@@ -25,7 +25,7 @@ Project Link: [Employee Directory](https://asheikh-io.github.io/react-employee-d
     
 ### Project Screenshot
     
-![React Employee Directory]()
+![React Employee Directory](https://user-images.githubusercontent.com/66457087/100018269-344bb880-2daa-11eb-9065-7c48e8de8d3b.PNG)
     
 ## Installation Instructions
     
