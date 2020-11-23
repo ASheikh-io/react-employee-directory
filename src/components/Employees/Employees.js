@@ -12,7 +12,7 @@ import Grid from "@material-ui/core/Grid";
 class Employees extends Component {
     state= {
         employees: [],
-        loadedEmoloyees: [],
+        loadedEmployees: [],
         search: "",
         orderBy:"",
         order: "asc"
@@ -31,9 +31,10 @@ class Employees extends Component {
                     phone: employee.phone
                 }
             })
+            console.log("this is the" + employeeData);
             this.setState({
                 employees: employeeData,
-                loadedEmoloyees: employeeData
+                loadedEmployees: employeeData
             })
         })
         .catch(err => console.log(err));
