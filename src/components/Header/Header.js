@@ -1,10 +1,10 @@
 import React from "react";
-import "./Header.css";
+import "./header.css";
 
 function Header() {
     return (
         <div className="jumbotron text-center">
-            <h1>Employee Directory</h1>
+            <h1>React Employee Directory</h1>
         </div>
     )
 }

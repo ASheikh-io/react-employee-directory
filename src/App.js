@@ -1,16 +1,15 @@
-import React from 'react';
-import './App.css';
-import API from "./utils/API"
-
+import React from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Employees from "./components/Employees/Employees";
 
 function App() {
-    return (
-    
-     <div className="App">
-          <h1>Employee Directory</h1>
-      </div>
-    
-  )
+  return (
+    <div>
+      <Header />
+      <Employees />
+    </div>
+  );
 }
 
 export default App;
